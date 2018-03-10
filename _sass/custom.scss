@@ -48,4 +48,14 @@ body {
   background: $white-text; 
 }
 
+.main-navmenu .inner {
+  height: 75px;
+  line-height: 60px;
+  padding: 0 10px;
+  background: transparent;
+
+ }
+
+
+
 @import "partials/menu", "partials/footer", "partials/slider";
