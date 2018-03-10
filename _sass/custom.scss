@@ -19,7 +19,7 @@ body {
 body {
 	font-family:$font-stack;
 	color: $default-color;
-	font-size:14px;
+	font-size:14px !important;
 }
 
 .overall-container {
@@ -39,6 +39,13 @@ body {
   color:$white-text;
   display:inline-block;
   padding:0 10px;  
+}
+
+.body-section {
+  width:100%;
+  box-sizing: border-box;
+  position: relative;
+  background: $white-text; 
 }
 
 @import "partials/menu", "partials/footer", "partials/slider";
