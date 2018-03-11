@@ -26,15 +26,7 @@
 		    margin-top: 10px;
 	    }
 
-	    p.subtext {
-	    	color: #FFFFFF;
-		    text-align: left;
-		    font-size: 14px;
-		    line-height: 18px;
-		    font-family: open-sans, sans-serif;
-		    font-weight: 300;
-		    text-transform: none;
-	    }
+	    
 	}
 
 	.slider-caption li { 
@@ -113,4 +105,24 @@
     position: relative;
     margin-right: -10000px;
     margin-top: 5px;
+}
+
+
+
+
+
+ .subtext-cont p.subtext {
+   	color: #FFFFFF;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: open-sans, sans-serif;
+    font-weight: 300;
+    text-transform: none;
+    width: 500px;
+    z-index: 51;
+    position: relative;
+    
+    
+
 }

@@ -158,6 +158,13 @@ body {
   vertical-align: top;
   margin-top: 150px; }
 
+.subtext-cont {
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: transparent; }
+
 .col .welcome {
   font-family: open-sans, sans-serif;
   font-size: 30px; }
@@ -358,14 +365,6 @@ body {
       font-family: open-sans, sans-serif;
       font-weight: 2000;
       margin-top: 10px; }
-    .slider-container .slider-caption-text p.subtext {
-      color: #FFFFFF;
-      text-align: left;
-      font-size: 14px;
-      line-height: 18px;
-      font-family: open-sans, sans-serif;
-      font-weight: 300;
-      text-transform: none; }
   .slider-container .slider-caption li {
     z-index: 1000;
     position: absolute;
@@ -425,3 +424,15 @@ body {
   position: relative;
   margin-right: -10000px;
   margin-top: 5px; }
+
+.subtext-cont p.subtext {
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: open-sans, sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  width: 500px;
+  z-index: 51;
+  position: relative; }
