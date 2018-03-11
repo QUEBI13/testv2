@@ -43,7 +43,10 @@ body {
   position: fixed;
   margin-top: 20px;
   margin-left: -20px;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: background-color 1s ease-in 0s;
+  -o-transition: background-color 1s ease-in 0s;
+  transition: background-color 1s ease-in 0s; }
 
 .cont-support {
   height: 60px;
@@ -142,7 +145,7 @@ body {
 .slider-container .logobg-cont {
   z-index: 16;
   display: block;
-  margin-top: 100px; }
+  margin-top: 150px; }
 
 .slider-container .logobg-cont .logo2 {
   border: 0px;
@@ -153,7 +156,7 @@ body {
   transform-origin: left top;
   display: block;
   vertical-align: top;
-  margin-left: 500px; }
+  margin-top: 150px; }
 
 .col .welcome {
   font-family: open-sans, sans-serif;
@@ -294,7 +297,7 @@ body {
   font-size: 12px;
   height: 200px; }
 
-/*article*/
+/*nav bar animation*/
 .main-navmenu .inner {
   height: 60px;
   line-height: 60px;
@@ -353,15 +356,16 @@ body {
       font-size: 70px;
       line-height: 70px;
       font-family: open-sans, sans-serif;
-      font-weight: 1000;
+      font-weight: 2000;
       margin-top: 10px; }
     .slider-container .slider-caption-text p.subtext {
       color: #FFFFFF;
       text-align: left;
-      font-size: 12px;
-      line-height: 19px;
+      font-size: 14px;
+      line-height: 18px;
       font-family: open-sans, sans-serif;
-      font-weight: 300; }
+      font-weight: 300;
+      text-transform: none; }
   .slider-container .slider-caption li {
     z-index: 1000;
     position: absolute;

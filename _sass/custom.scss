@@ -59,6 +59,7 @@ body {
   margin-top: 20px;
   margin-left: -20px;
   width: 100%;
+  transition: background-color 1s ease-in 0s
 
 }
 
@@ -171,8 +172,8 @@ body {
 .slider-container .logobg-cont {
   z-index: 16;
   display: block;
-  margin-top: 100px;
-
+  margin-top: 150px;
+  
 }
 
 .slider-container .logobg-cont .logo2 {
@@ -182,9 +183,10 @@ body {
     -ms-transform-origin: left top;
     -o-transform-origin: left top;
     transform-origin: left top;
-        display: block;
+    display: block;
     vertical-align: top;
-    margin-left: 500px;
+    margin-top: 150px;
+ 
 
 }
 
@@ -342,7 +344,8 @@ body {
     height: 200px;
 }
 
-/*article*/
+/*nav bar animation*/
+
 
 
 
