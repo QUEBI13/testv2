@@ -1,7 +1,8 @@
 a,
 a:focus,
 a:hover {
-  color: #fff; }
+  color: #D51130;
+  text-decoration: none; }
 
 html,
 body {
@@ -38,7 +39,11 @@ body {
   height: 75vh;
   line-height: 60px;
   padding: 0 10px;
-  background: transparent; }
+  background: transparent;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: -20px;
+  width: 100%; }
 
 .cont-support {
   height: 60px;
