@@ -1,9 +1,18 @@
 .main-navmenu {
+	width:100%;
+	height:80px; 
+	background:rgba(0,0,0,0.8);
+	padding:0 !important;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:999;
+
 	.inner {
-		height:60px;
-		line-height:60px;
-		padding:0 10px; 
-		background:rgba(0,0,0,0.8);
+		height:80px;
+		line-height:80px;
+		padding:0 0px; 
+		
 	}
 
 	.nav-menu-cont .nav-link:hover,
@@ -13,16 +22,17 @@
 
 	.nav-menu-cont {
 		float: right;
-  		height:60px;
+  		height:80px;
 		.nav-link  {
-			height:60px;  
+			height:80px;  
 			margin-left: 1rem;
 			padding:0 10px !important;
-			text-transform:uppercase; 
+			text-transform:uppercase;
+			color: $white-text;
 		}
 
 		.active {
-			height:60px; 
+			height:80px; 
 			color: red;
 			border-bottom-color: $white-text;
 			padding:0 10px ;
@@ -30,9 +40,90 @@
 	}
 
 	.nav-brand {
-	  height:60px;
-	  line-height:60px; 
+	  height:80px;
+	  line-height:80px; 
 	  float: left;
-	}   
+	  margin:0 20px;
+	}
+
+	.cont-support {
+	  height: 80px;
+	  line-height:80px;
+	  padding:0 20px; 
+	  background:#D51130;
+	  position: relative;
+	  color: #fff;
+	}
+
+	   
 }
 
+
+
+.res-menu-btn {
+	display:none;
+	float:right;
+	height:80px;
+	line-height:80px;
+	padding:0 20px;     
+}
+
+.top-menu-icon {
+	font-family: FontAwesome;
+	font-size:28px;
+	text-align:left;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration:none;
+	color:#fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding:0;
+
+	display:block; 
+	text-decoration:none;
+	outline:none;
+}
+
+.show-menu-btn {
+	display:block; 
+}
+
+@media screen and (max-width: 1150px){
+	.nav-menu-cont {
+		display:none;
+		position:fixed;
+		top:80px;
+		left:0;
+		width:100%;
+		height:auto !important;
+		background:rgba(0,0,0,.9);
+		padding:20px 0;
+		box-sizing:border-box; 
+
+		.nav-link  {
+			width:100%; 
+			line-height:35px !important; 
+			height:35px !important;
+			text-align:left; 
+		}   
+	}
+
+	.res-menu-btn {
+		display:block; 
+	}
+
+	.show-menu-btn {
+		display:block; 
+	}	
+
+	.main-navmenu {
+		.cont-support {
+			width:100% !important; 
+			height: 50px !important;
+			line-height:50px !important;
+			display:block; 
+		}
+	}
+
+}
