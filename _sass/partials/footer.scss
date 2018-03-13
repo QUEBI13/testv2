@@ -1,8 +1,65 @@
 /* Footer */
 .footer-section {
   width:100%;
-  color:#fff;
-  background-image:url(../images/footer-bg.jpg);
-  background-repeat:no-repeat;
-  background-size:cover; 
+  position: relative;
+  height:90%;
+  background: transparent;
+  height: 50vh;
+  color:$white-text;
+}
+  
+.closing {
+ font-size: 16px;
+ font-family: $font-stack;
+}
+
+.f2 {
+ width:100%; 
+ height:200px;
+ background-color: #fff;
+
+}
+
+.f2-container-logo { 
+ width: 100%;
+
+ 	img {
+ 	  height: 100px;
+      float: left;
+      margin: 50px;
+
+
+ 	}
+ 
+}
+
+.f2-menu {
+	z-index: 117;
+    width: 191px;
+    min-height: 95px;
+    background-color: transparent;
+    text-align: right;
+    color: #666666;
+    font-size: 13px;
+    position: relative;
+    margin-top: 5px;
+    font-family: $font-stack;
+    font-weight: 700;
+    padding-top: 50px;
+    line-height: 0;
+}
+
+.ff3 {
+	background-color: #dadada;
+	width: 100%;
+	height: 50px;
+}
+
+.fmenu {
+	width: 100%;
+
+	li {
+		display: inline-block;
+		margin-right: 20px;
+	}
 }
