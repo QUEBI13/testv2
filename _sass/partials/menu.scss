@@ -1,13 +1,13 @@
 .main-navmenu2 {
 	width:100%;
 	height:80px; 
-	background:transparent;
+	background-color: #fff;
 	padding:0 !important;
 	position: fixed;
 	top:0;
 	left:0;
 	z-index:999;
-	transition: background-color 0.4s ease-out;
+	
 
 	.inner {
 		height:80px;
@@ -71,6 +71,8 @@
 
 	   
 }
+
+
 
 .res-menu-btn {
 	display:none;
