@@ -153,43 +153,51 @@ body {
   #ffe {
     width: 100%; } }
 
-.main-navmenu {
+.main-navmenu2 {
   width: 100%;
   height: 80px;
-  background: rgba(0, 0, 0, 0.8);
+  background: transparent;
   padding: 0 !important;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999; }
-  .main-navmenu .inner {
+  z-index: 999;
+  -webkit-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out; }
+  .main-navmenu2 .inner {
     height: 80px;
     line-height: 80px;
     padding: 0 0px; }
-  .main-navmenu .nav-menu-cont .nav-link:hover,
-  .main-navmenu .nav-menu-cont .nav-link:focus {
+  .main-navmenu2 .nav-menu-cont .nav-link:focus {
     border-bottom-color: rgba(255, 255, 255, 0.25); }
-  .main-navmenu .nav-menu-cont {
+  .main-navmenu2 .nav-menu-cont {
     float: right;
     height: 80px; }
-    .main-navmenu .nav-menu-cont .nav-link {
+    .main-navmenu2 .nav-menu-cont a:hover {
+      color: #D51130; }
+    .main-navmenu2 .nav-menu-cont .nav-link {
       height: 80px;
       margin-left: 1rem;
       padding: 0 10px !important;
       text-transform: uppercase;
-      color: #fff;
-      background-color: transparent; }
-    .main-navmenu .nav-menu-cont .active {
+      color: #bdbdbc;
+      background-color: transparent;
+      font-family: open-sans, sans-serif;
+      font-size: 12px;
+      font-weight: 700; }
+    .main-navmenu2 .nav-menu-cont .active {
       height: 80px;
-      color: red;
+      color: #D51130;
       border-bottom-color: #fff;
-      padding: 0 10px; }
-  .main-navmenu .nav-brand {
+      padding: 0 10px;
+      font-weight: 700; }
+  .main-navmenu2 .nav-brand {
     height: 80px;
     line-height: 80px;
     float: left;
     margin: 0 20px; }
-  .main-navmenu .cont-support {
+  .main-navmenu2 .cont-support {
     height: 80px;
     line-height: 80px;
     padding: 0 20px;
@@ -248,6 +256,10 @@ body {
     height: 50px !important;
     line-height: 50px !important;
     display: block; } }
+
+nav.scroll {
+  background-color: #AFFFFF;
+  color: #D51130; }
 
 /*.dropdown {
     position: relative;

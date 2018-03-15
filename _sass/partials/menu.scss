@@ -1,12 +1,13 @@
-.main-navmenu {
+.main-navmenu2 {
 	width:100%;
 	height:80px; 
-	background:rgba(0,0,0,0.8);
+	background:transparent;
 	padding:0 !important;
 	position: fixed;
 	top:0;
 	left:0;
 	z-index:999;
+	transition: background-color 0.4s ease-out;
 
 	.inner {
 		height:80px;
@@ -15,7 +16,7 @@
 		
 	}
 
-	.nav-menu-cont .nav-link:hover,
+	
 	.nav-menu-cont .nav-link:focus {
 	  border-bottom-color: rgba(255, 255, 255, .25);
 	}
@@ -23,13 +24,21 @@
 	.nav-menu-cont {
 		float: right;
   		height:80px;
+
+  		a:hover {color: #D51130};
+
+
   		.nav-link  {
+
 			height:80px;  
 			margin-left: 1rem;
 			padding:0 10px !important;
 			text-transform:uppercase;
-			color: $white-text;
+			color: #bdbdbc;
 			background-color: transparent;
+			font-family: $font-stack;
+			font-size: 12px;
+			font-weight: 700;
 
 
 
@@ -37,9 +46,10 @@
 
 		.active {
 			height:80px; 
-			color: red;
+			color: #D51130;
 			border-bottom-color: $white-text;
 			padding:0 10px ;
+			font-weight: 700;
 		}
 	}
 
@@ -61,8 +71,6 @@
 
 	   
 }
-
-
 
 .res-menu-btn {
 	display:none;
@@ -133,7 +141,10 @@
 
 }
 
-
+nav.scroll {
+  background-color: #AFFFFF;
+  color: #D51130;
+}
 
 /*.dropdown {
     position: relative;
