@@ -5,6 +5,7 @@ $white-text: #fff;
 
 
 
+
 a,
 a:focus,
 a:hover {
@@ -163,7 +164,7 @@ body {
     width:100%;
     box-sizing:border-box; 
     background-color: #fff;
-    height: 220px auto;
+    height: auto;
 
 
 
@@ -196,7 +197,27 @@ body {
   }
 }
 
+@media screen and (max-width: 1150px){
+  #closing {
+    width: 100%;
+    height: auto;
+    }
 
-@import "partials/menu", "partials/footer", "partials/slider";
+  #f2 {
+    width: 100%;
+  }
+
+  #ffe {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+@import "partials/menu", "partials/footer", "partials/slider" , "partials/it";
 
 
