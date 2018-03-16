@@ -1,0 +1,52 @@
+/*IT and Branch*/
+.page-title {
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 100px;
+
+  p {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: $font-stack;
+  color: #fff;
+  } 
+
+  span {
+  font-size: 20px;
+  font-family: $font-stack;
+  color: #fff;
+  line-height: normal;
+  }
+}
+
+.bg-container {
+  position: relative;
+  height:90%;
+  background: transparent;
+  height: 120vh; 
+}
+
+.content-container {
+	margin: 50px 50px;
+	font-size: 15px;
+	height: 100%;
+
+}
+
+.it-cont{
+	width:100%;
+    box-sizing:border-box; 
+    background-color: #fff;
+    margin-top: 50px;
+    height: auto;
+
+    
+    p {
+      padding-top: 20px;
+      padding-bottom: 0px;
+      font-size:14px; 
+      height: auto;
+      
+    }
+}
+
