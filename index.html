@@ -4,9 +4,8 @@
     <title>Schwarz &amp; Rohloff GmbH </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- FONT AWESOME -->
@@ -26,7 +25,13 @@
       <script> new WOW().init(); </script>
   </head>
   <body class="text-center">
-    
+    <ul class="cb-slideshow">
+      <li><span>Image 01</span></li>
+      <li><span>Image 02</span></li>
+      <li><span>Image 03</span></li>
+      <li><span>Image 04</span></li>
+      <li><span>Image 05</span></li>
+    </ul>
 
 
     <!-- OVERALL CONTAINER -->
@@ -58,14 +63,6 @@
         <div class="logobg-cont">
           <center><img src="images/logo_bg.png" class="img-fluid"></center>
         </div>
-
-        <ul class="cb-slideshow">
-          <li><span>Image 01</span></li>
-          <li><span>Image 02</span></li>
-          <li><span>Image 03</span></li>
-          <li><span>Image 04</span></li>
-          <li><span>Image 05</span></li>
-        </ul>
 
         <div class="text-v-slider">
           <div class="v-slider-frame">
@@ -227,7 +224,7 @@
           </div>
 
           <div class="row">
-            <div class="article-cont col-md-6 col-sm-12">
+            <div class="article-cont col-md-6 col-sm-12 m-y-2">
               <div class="articles-title-cont text-left">
                   <span class="article-date bg-danger m-r-2">
                     <div>24</div>
@@ -239,7 +236,7 @@
               <img src="images/art-2.png" class="img-fluid w-100 m-t-2">
             </div>
 
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12 m-y-2">
               <div class="articles-title-cont text-left">
                 <span class="article-date bg-danger m-r-2">
                   <div>24</div>
@@ -346,43 +343,47 @@
        </div>
 
        <div class="f2">
-        <div class="row">
+        <div class="container-fluid">
+          <div class="row">
             <div class="col-md-4 col-sm-12 f2-container-logo">
-
-                <img src="images/Logo-B.png" class="img-fluid">
+              <img src="images/Logo-B.png" class="img-fluid m-y-3">
             </div>
-        
-            <div class="col-md-2 col-sm-12 f2-menu">
-              <p>UNTERNEHMEN</p>
-              <p> » Über uns</p>
-              <p> » Karriere</p>
-              <p> » Soziales / Sponsoring</p>
 
+            <div class="col-md-8 col-sm 12">
+              <div class="row">
+                <div class="col-md-3 col-sm-12 f2-menu m-y-3">
+                  <p><strong>UNTERNEHMEN</strong></p>
+                  <p>» Über uns</p>
+                  <p>» Karriere</p>
+                  <p>» Soziales / Sponsoring</p>
+                </div>
+
+                <div class="col-md-3 col-sm-12 f2-menu m-y-3">
+                  <p><strong>IT-LÖSUNGEN</strong></p>
+                  <p>» Client-Management</p>
+                  <p>» Server &amp; Storage</p>
+                  <p>» Networking Solutions</p>
+                  <p>» Virtualisierung</p>
+                  <p>» Security</p>
+                </div>
+
+                <div class="col-md-3 col-sm-12 f2-menu m-y-3">
+                  <p><strong>BRANCHENLÖSUNGEN</strong></p>
+                  <p>» Volkshochschulen</p>
+                  <p>» Hotel &amp; Gastro</p>
+                  <p>» Datev</p>
+                </div>
+                <div class="col-md-3 col-sm-12 f2-menu m-y-3">
+                  <p><strong>SR_SERVICES</strong></p>
+                  <p>» SR_FOCUS</p>
+                  <p>» SR_SPAM</p>
+                  <p>» SR_ANALYSE</p>
+                </div>
               </div>
+            </div>    
 
-            <div class="col-md-2 col-sm-12 f2-menu">
-              <p>IT-LÖSUNGEN</p>
-              <p> » Client-Management</p>
-              <p> » Server &amp; Storage</p>
-              <p> » Networking Solutions</p>
-              <p>» Virtualisierung</p>
-              <p>» Security</p>
-              </div>
-
-            <div class="col-md-2 col-sm-12 f2-menu">
-              <p>BRANCHENLÖSUNGEN</p>
-              <p> » Volkshochschulen</p>
-              <p> » Hotel &amp; Gastro</p>
-              <p> » Datev</p>
-              </div>
-            <div class="col-md-2 col-sm-12 f2-menu p-r-7">
-              <p>SR_SERVICES</p>
-              <p> » SR_FOCUS</p>
-              <p> » SR_SPAM</p>
-              <p> » SR_ANALYSE</p>
-              </div>    
-
-            </div>
+            
+          </div>
         </div>
        </div>
 
@@ -399,7 +400,7 @@
 
        </nav>
        <div class="col-md-4 col-sm-12 p-t-2">
-        <p>COPYRIGHT 2017 - SCHWARZ &amp; ROHLOFF</p>
+        <p class="copyright">COPYRIGHT 2017 - SCHWARZ &amp; ROHLOFF</p>
        </div>
 
 
@@ -446,7 +447,19 @@
       });
     </script>
 
-    <!--onscroll bg-->
+    
+    <!-- TOP MENU ON SCROLL SCRIPT -->
+    <script type="text/javascript">
+      $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 10) {
+            $(".main-navmenu2").addClass("bg-white-menu");
+        } else {
+            $(".main-navmenu2").removeClass("bg-white-menu");
+        }
+      });
+    </script>
    
 
 

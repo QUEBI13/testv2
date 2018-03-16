@@ -21,6 +21,7 @@
   }
 
 .f2 {
+ padding:50px 20px; 
  width:100%; 
  height: auto;
  background-color: #fff;
@@ -34,7 +35,7 @@
  	img {
  	  height: auto;
       float: left;
-      margin: 50px;
+      margin:0  50px;
 
 
  	}
@@ -42,10 +43,6 @@
 }
 
 .f2-menu {
-	z-index: 117;
-    width: 191px;
-    min-height: 95px;
-    background-color: transparent;
     text-align: right;
     color: #666666;
     font-size: 13px;
@@ -53,8 +50,15 @@
     margin-top: 5px;
     font-family: $font-stack;
     font-weight: 700;
-    padding-top: 50px;
     line-height: 0;
+}
+
+.f2-menu p strong {
+  font-size:14px; 
+}
+
+.f2-menu p {
+  font-size:12px; 
 }
 
 .ff3 {
@@ -68,8 +72,13 @@
 
 	li {
 		display: inline-block;
-		margin-right: 20px;
+		margin:10px 10px;
 	}
+}
+
+.copyright {
+  font-size:14px;
+  margin:10px 0; 
 }
 
 @media screen and (max-width: 1200px){
@@ -106,4 +115,23 @@
       text-align: center;
       font-size: 18px;
     }
+}
+
+
+@media screen and (max-width: 540px){
+  .f2-container-logo img {
+    height: auto;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .rounded-circle {
+    display:block;
+    float:none !important;
+    margin:10px auto; 
+  }
+
+  .copyright {
+    font-size:12px;
+  }
 }
