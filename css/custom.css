@@ -507,9 +507,18 @@ ul.v-slides {
   height: 280px; }
   .Q-cont img {
     float: left; }
+  .Q-cont p {
+    width: 100%; }
 
 .qname {
   height: auto;
   width: 100%;
   padding-top: 180px;
   margin-left: 300px; }
+
+@media screen and (max-width: 1200px) {
+  #Q-cont {
+    width: 100%; }
+  #qname {
+    width: 50%;
+    height: auto; } }
