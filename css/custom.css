@@ -455,7 +455,7 @@ ul.v-slides {
   height: 263px;
   line-height: 50px; }
 
-/*IT and Branch*/
+/*IT, UNTERNEHMEN and Branch*/
 .page-title {
   width: 100%;
   margin-top: 150px;
@@ -494,3 +494,22 @@ ul.v-slides {
     padding-bottom: 0px;
     font-size: 14px;
     height: auto; }
+
+.col {
+  padding-top: 50px; }
+
+.Q-cont {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  height: 280px; }
+  .Q-cont img {
+    float: left; }
+
+.qname {
+  height: auto;
+  width: 100%;
+  padding-top: 180px;
+  margin-left: 300px; }
